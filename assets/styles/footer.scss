@@ -1,0 +1,12 @@
+@import "variables.scss";
+footer {
+    & a {
+        color: $noir;
+        text-decoration: none; /* Supprime le soulignement */
+        transition: color 0.1s ease; /* Ajoute une transition douce à la propriété de couleur */
+    }
+    & a:hover {
+        color: $beige4;
+    }
+
+}
