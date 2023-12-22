@@ -32,10 +32,11 @@
     background: -webkit-linear-gradient(to left bottom, $beige3, $beige2);
 }
 .accordion-body{
-    color: $beige1;
+    color: $noir;
     background: linear-gradient(to left bottom, $beige2, $beige1);
     background: -webkit-linear-gradient(to left bottom, $beige2, $beige1);
     & .department-list {
+        font-size: small;
         list-style-type: none;
         padding: 0;
         margin: 0;
@@ -44,6 +45,16 @@
 }
 //#region --------------- accordion ---------------
 header {
+    & .list-group-item {
+        font-size: small;
+        color: $noir;
+        background: linear-gradient(to left bottom, $beige2, $beige1)!important;
+        background: -webkit-linear-gradient(to left bottom, $beige2, $beige1)!important;
+    }
+    & .list-group-item:hover {
+        color: $beige4;
+    }
+
     & a {
         color: $noir;
         text-decoration: none; /* Supprime le soulignement */
