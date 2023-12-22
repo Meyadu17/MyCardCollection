@@ -1,0 +1,51 @@
+@import "~bootstrap/scss/bootstrap";
+@import "variables.scss";
+
+body {
+  background-color: $beige1;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: row;
+  height: 100vh; /* Pour occuper 100% de la hauteur de la fenêtre */
+}
+
+.header {
+  //background-color: green;
+  background: linear-gradient(to left bottom, $beige4, $beige3);
+  background: -webkit-linear-gradient(to left bottom, $beige4, $beige3);
+  padding: 20px;
+}
+
+//a voir si on va travailler dessus ou pas
+//.sidebar {
+//  background-color: red;
+//}
+
+.department-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.department-list li {
+  margin-bottom: 10px;
+}
+
+.body-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column; /* Organiser le contenu de body-content en colonnes */
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer {
+  background-color: $beige2;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto; /* Pour pousser le footer vers le bas de la page */
+}

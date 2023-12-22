@@ -1,0 +1,22 @@
+@import "variables.scss";
+
+.gpe-titre-logo {
+    background-color: $beige1 ;
+    display: flex; /* Utiliser Flexbox pour aligner les éléments horizontalement */
+    align-items: center; /* Aligner les éléments verticalement au centre */
+    justify-content: center; /* Centrer horizontalement le contenu */
+    box-shadow: 0px 5px 15px $beige2; /* Décalage horizontal, décalage vertical, flou, couleur de l'ombre */
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: auto;
+    margin: 10px;
+}
+.titre-header {
+    font-size: medium;
+    margin: 10px;
+}
+

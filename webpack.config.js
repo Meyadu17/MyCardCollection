@@ -10,6 +10,9 @@ Encore
 
     .addEntry('app', './assets/app.js')
     .addEntry('variables', './assets/variables.js')
+    .addEntry('structureBloc', './assets/structureBloc.js')
+    .addEntry('header', './assets/header.js')
+    .addEntry('footer', './assets/footer.js')
 
     .splitEntryChunks()
 
