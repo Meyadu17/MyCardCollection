@@ -1,11 +1,15 @@
 @import "variables.scss";
 
+//#region --------------- entête de la nav-bar ---------------
 .gpe-titre-logo {
-    background-color: $beige1 ;
+    //background-color: $beige4 ;
+    background: linear-gradient(to left bottom, $beige3, $beige2);
+    background: -webkit-linear-gradient(to left bottom, $beige3, $beige2);
     display: flex; /* Utiliser Flexbox pour aligner les éléments horizontalement */
     align-items: center; /* Aligner les éléments verticalement au centre */
     justify-content: center; /* Centrer horizontalement le contenu */
-    box-shadow: 0px 5px 15px $beige2; /* Décalage horizontal, décalage vertical, flou, couleur de l'ombre */
+    box-shadow: 0px 5px 15px $beige4; /* Décalage horizontal, décalage vertical, flou, couleur de l'ombre */
+    margin-bottom: 10px;
 }
 
 .logo{
@@ -19,4 +23,31 @@
     font-size: medium;
     margin: 10px;
 }
+//#endregion --------------- entête de la nav-bar ---------------
 
+//#region --------------- accordion ---------------
+.accordion-button{
+    color: $beige2;
+    background: linear-gradient(to left bottom, $beige3, $beige2);
+    background: -webkit-linear-gradient(to left bottom, $beige3, $beige2);
+}
+.accordion-body{
+    color: $beige1;
+    background: linear-gradient(to left bottom, $beige2, $beige1);
+    background: -webkit-linear-gradient(to left bottom, $beige2, $beige1);
+    & .department-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        & a {
+            color: $noir;
+            text-decoration: none; /* Supprime le soulignement */
+            transition: color 0.1s ease; /* Ajoute une transition douce à la propriété de couleur */
+        }
+        & a:hover {
+            color: $beige4;
+        }
+    }
+}
+//#region --------------- accordion ---------------

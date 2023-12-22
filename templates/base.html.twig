@@ -16,6 +16,7 @@
         {% endblock %}
 
         {% block javascripts %}
+            {{ encore_entry_script_tags('header') }}
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
     </head>
@@ -28,27 +29,286 @@
             <h1 class="titre-header">Cartes<br>Postales<br>Anciennes</h1>
         </div>
         <nav class="sidebar">
-            <ul class="department-list">
-                <li><a href="#">Auvergne rhône alpes</a></li>
-                <li><a href="#">Bourgogne franche comté</a></li>
-                <li><a href="#">Bretagne</a></li>
-                <li><a href="#">Centre val de loire</a></li>
-                <li><a href="#">Corse</a></li>
-                <li><a href="#">Grand est</a></li>
-                <li><a href="#">Guadeloupe</a></li>
-                <li><a href="#">Guyane</a></li>
-                <li><a href="#">Hauts de France</a></li>
-                <li><a href="#">Île-de-France</a></li>
-                <li><a href="#">Martinique</a></li>
-                <li><a href="#">Mayotte</a></li>
-                <li><a href="#">Normandie</a></li>
-                <li><a href="#">Nouvelle Aquitaine</a></li>
-                <li><a href="#">Nouvelle-Calédonie</a></li>
-                <li><a href="#">Occitanie</a></li>
-                <li><a href="#">Pays de la loire</a></li>
-                <li><a href="#">Provence alpes côte d'azure</a></li>
-                <li><a href="#">Réunion</a></li>
-            </ul>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">
+                            Auvergne rhône alpes
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul class="department-list">
+                                <li><a href="#">Ain - 01</a></li><hr>
+                                <li><a href="#">Allier - 03</a></li><hr>
+                                <li><a href="#">Ardèche - 07</a></li><hr>
+                                <li><a href="#">Cantal - 15</a></li><hr>
+                                <li><a href="#">Drôme - 26</a></li><hr>
+                                <li><a href="#">Isère 26</a></li><hr>
+                                <li><a href="#">Loire - 42</a></li><hr>
+                                <li><a href="#">Haute-Loire - 43</a></li><hr>
+                                <li><a href="#">Puy-de-Dôme - 63</a></li><hr>
+                                <li><a href="#">Rhone - 69</a></li><hr>
+                                <li><a href="#">Savoie - 73</a></li><hr>
+                                <li><a href="#">Haute-Savoie - 74</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">
+                            Bourgogne franche comté
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <div class="accordion-body">
+                                <ul class="department-list">
+                                    <li><a href="#">Côte-d'Or - 21</a></li><hr>
+                                    <li><a href="#">Doubs - 25</a></li><hr>
+                                    <li><a href="#">Jura - 39</a></li><hr>
+                                    <li><a href="#">Nièvre - 58</a></li><hr>
+                                    <li><a href="#">Haute-Saône - 70</a></li><hr>
+                                    <li><a href="#">Saône-et-Loire - 71</a></li><hr>
+                                    <li><a href="#">Yonne - 89</a></li><hr>
+                                    <li><a href="#">Territoire de Belfort - 90</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
+                            Bretagne
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul class="department-list">
+                                <li><a href="#">Côtes-d'Armor - 22</a></li><hr>
+                                <li><a href="#">Finistère - 29</a></li><hr>
+                                <li><a href="#">Ille-et-Vilaine - 35</a></li><hr>
+                                <li><a href="#">Morbihan - 56</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
+                            Centre val de loire
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul class="department-list">
+                                <li><a href="#">Cher - 18</a></li><hr>
+                                <li><a href="#">Eure-et-Loir - 18</a></li><hr>
+                                <li><a href="#">Indre - 36</a></li><hr>
+                                <li><a href="#">Indre-et-Loire - 37</a></li><hr>
+                                <li><a href="#">Loir-et-Char - 41</a></li><hr>
+                                <li><a href="#">Loiret - 45</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
+                            Corse
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul class="department-list">
+                                <li><a href="#">Haute-Corse -2A</a></li><hr>
+                                <li><a href="#">Corse-du-Sud -2B</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
+                            Grand est
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul class="department-list">
+                                <li><a href="#">Ardennes - 08</a></li><hr>
+                                <li><a href="#">Aube - 10</a></li><hr>
+                                <li><a href="#">Marne - 51</a></li><hr>
+                                <li><a href="#">Haute-Marne - 52</a></li><hr>
+                                <li><a href="#">Meuse - 55</a></li><hr>
+                                <li><a href="#">Moselle - 57</a></li><hr>
+                                <li><a href="#">Bas-Rhin - 67</a></li><hr>
+                                <li><a href="#">Haut-Rhin - 68</a></li><hr>
+                                <li><a href="#">Voges - 88</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
+                            DOM-ROM
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul class="department-list">
+                                <li><a href="#">Guadeloupe</a></li><hr>
+                                <li><a href="#">Guyane</a></li><hr>
+                                <li><a href="#">Martinique</a></li><hr>
+                                <li><a href="#">Mayotte</a></li><hr>
+                                <li><a href="#">Nouvelle-Calédonie</a></li><hr>
+                                <li><a href="#">Réunion</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
+                            Hauts de France
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul class="department-list">
+                                <li><a href="#">Aine - 02</a></li><hr>
+                                <li><a href="#">Nord - 59</a></li><hr>
+                                <li><a href="#">Oise - 60</a></li><hr>
+                                <li><a href="#">Pas-de-Calais - 62</a></li><hr>
+                                <li><a href="#">Somme - 80</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
+                            Île-de-France
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul class="department-list">
+                                <li><a href="#">Paris - 75</a></li><hr>
+                                <li><a href="#">Seine-et-Marne - 77</a></li><hr>
+                                <li><a href="#">Yvelines - 78</a></li><hr>
+                                <li><a href="#">Essonne - 91</a></li><hr>
+                                <li><a href="#">Haut-de-Seine - 92</a></li><hr>
+                                <li><a href="#">Seine-Saint-Denis - 93</a></li><hr>
+                                <li><a href="#">Val-de-Marne - 94</a></li><hr>
+                                <li><a href="#">Val-d'Oise - 95</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
+                            Normandie
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul class="department-list">
+                                <li><a href="#">Calvados - 14</a></li><hr>
+                                <li><a href="#">Eure - 27</a></li><hr>
+                                <li><a href="#">Manche - 50</a></li><hr>
+                                <li><a href="#">Orne - 61</a></li><hr>
+                                <li><a href="#">Seine-Maritime - 76</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
+                            Nouvelle Aquitaine
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul class="department-list">
+                                <li><a href="#">Charente - 16</a></li><hr>
+                                <li><a href="#">Charente-Maritime - 17</a></li><hr>
+                                <li><a href="#">Île d'Oléron - 17</a></li><hr>
+                                <li><a href="#">Corrèze - 19</a></li><hr>
+                                <li><a href="#">Creuse - 23</a></li><hr>
+                                <li><a href="#">Dordogne - 24</a></li><hr>
+                                <li><a href="#">Gironde - 33</a></li><hr>
+                                <li><a href="#">Landes - 40</a></li><hr>
+                                <li><a href="#">Lot-et-Garonne - 47</a></li><hr>
+                                <li><a href="#">Pyrénnées-Atlantiques - 64</a></li><hr>
+                                <li><a href="#">Deux-Sèvres - 79</a></li><hr>
+                                <li><a href="#">Vienne - 86</a></li><hr>
+                                <li><a href="#">Haut-Vienne - 87</a></li><hr>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
+                            Occitanie
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul class="department-list">
+                                <li><a href="#">Ariège - 09</a></li><hr>
+                                <li><a href="#">Aude - 11</a></li><hr>
+                                <li><a href="#">Aveyron - 12</a></li><hr>
+                                <li><a href="#">Gard - 30</a></li><hr>
+                                <li><a href="#">Haute-Garonne - 31</a></li><hr>
+                                <li><a href="#">Gers - 32</a></li><hr>
+                                <li><a href="#">Hérault - 34</a></li><hr>
+                                <li><a href="#">Lot - 46</a></li><hr>
+                                <li><a href="#">Lozère - 48</a></li><hr>
+                                <li><a href="#">Hautes-Pyrénées - 65</a></li><hr>
+                                <li><a href="#">Pyrénées-Orientales - 66</a></li><hr>
+                                <li><a href="#">Tran - 81</a></li><hr>
+                                <li><a href="#">Tarn-et-Garonne - 82</a></li><hr>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
+                            Pays de la loire
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul class="department-list">
+                                <li><a href="#">XXX</a></li><hr>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
+                            Provence alpes côte d'azure
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul class="department-list">
+                                <li><a href="#">XXX</a></li><hr>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </nav>
     </header>
 
