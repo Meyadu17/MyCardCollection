@@ -33,6 +33,7 @@
         <nav class="sidebar">
             <div class="accordion">
 
+                {% if is_granted('ROLE_ADMIN') %}
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">
@@ -46,6 +47,7 @@
                         </div>
                     </div>
                 </div>
+                {% endif %}
 
                 <div class="accordion-item">
                     <h2 class="accordion-header">
