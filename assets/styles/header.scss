@@ -1,13 +1,23 @@
 @import "variables.scss";
 
 //#region --------------- entête de la nav-bar ---------------
-.gpe-titre-logo {
+.gpe-titre-logo{
     //background-color: $beige4 ;
     background: linear-gradient(to left bottom, $beige3, $beige2);
     background: -webkit-linear-gradient(to left bottom, $beige3, $beige2);
     display: flex; /* Utiliser Flexbox pour aligner les éléments horizontalement */
     align-items: center; /* Aligner les éléments verticalement au centre */
     justify-content: center; /* Centrer horizontalement le contenu */
+    box-shadow: 0px 5px 15px $beige4; /* Décalage horizontal, décalage vertical, flou, couleur de l'ombre */
+    margin-bottom: 10px;
+}
+.menu-admin{
+    //background-color: $beige4 ;
+    background: linear-gradient(to left bottom, $beige3, $beige2);
+    background: -webkit-linear-gradient(to left bottom, $beige3, $beige2);
+
+    align-items: center; /* Aligner les éléments verticalement au centre */
+
     box-shadow: 0px 5px 15px $beige4; /* Décalage horizontal, décalage vertical, flou, couleur de l'ombre */
     margin-bottom: 10px;
 }
@@ -30,6 +40,7 @@
     color: $beige2;
     background: linear-gradient(to left bottom, $beige3, $beige2);
     background: -webkit-linear-gradient(to left bottom, $beige3, $beige2);
+    padding: 6px 10px!important;
 }
 .accordion-body{
     color: $noir;

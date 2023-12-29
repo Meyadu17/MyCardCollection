@@ -10,3 +10,4 @@ home:
 
 app_logout:
     path: /logout
+    methods: GET

@@ -1,6 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
 @import "variables.scss";
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   background-color: $beige1;
   margin: 0;
@@ -15,26 +20,19 @@ body {
   background: linear-gradient(to left bottom, $beige3, $beige1);
   background: -webkit-linear-gradient(to left bottom, $beige3, $beige1);
   padding: 20px;
-}
-
-.department-list {
-  //list-style-type: none;
-  //padding: 0;
-  //margin: 0;
-}
-
-.department-list li {
- // margin-bottom: 10px;
+  flex: 0 0 auto; /* Le header ne doit pas être flexible en hauteur */
+  overflow-y: auto; /* Permet le défilement vertical si le contenu est plus grand que la hauteur de la fenêtre */
 }
 
 .body-content {
   display: flex;
   flex: 1;
   flex-direction: column; /* Organiser le contenu de body-content en colonnes */
+  //overflow-y: auto; /* Permet le défilement vertical si le contenu est plus grand que la hauteur de la fenêtre */
 }
 
 .main-content {
-  flex: 1;
+  //flex: 1;
   padding: 20px;
 }
 

@@ -30,6 +30,12 @@
             <h1 class="titre-header">Cartes<br>Postales<br>Anciennes</h1>
         </div>
         </a>
+        {% if is_granted('ROLE_ADMIN') %}
+            <div class="menu-admin ">
+                <h1 class="titre-header"><a href="#" class="">Bonjour {{ app.user.pseudo }}</a></h1>
+                <h1 class="titre-header"><a href="{{ path('app_admin_logout') }}" class="">Déconnexion</a></h1>
+            </div>
+        {% endif %}
         <nav class="sidebar">
             <div class="accordion">
 
@@ -37,7 +43,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">
-                            Administration
+                            AdministrationX
                         </button>
                     </h2>
                     <div class="accordion-collapse collapse">
@@ -52,7 +58,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">
-                            Auvergne rhône alpes
+                            Auvergne rhône alpesX
                         </button>
                     </h2>
                     <div class="accordion-collapse collapse">
@@ -76,7 +82,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">
-                            Bourgogne franche comté
+                            Bourgogne franche comtéX
                         </button>
                     </h2>
                     <div class="accordion-collapse collapse">
@@ -96,7 +102,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
-                            Bretagne
+                            BretagneX
                         </button>
                     </h2><div class="accordion-collapse collapse">
                         <div class="list-group">
@@ -111,7 +117,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
-                            Centre val de loire
+                            Centre val de loireX
                         </button>
                     </h2>
                     <div class="accordion-collapse collapse">
@@ -129,7 +135,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
-                            Corse
+                            CorseX
                         </button>
                     </h2>
                     <div class="accordion-collapse collapse">
@@ -143,7 +149,7 @@
                 <div class="accordion-item"s>
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
-                            Grand est
+                            Grand estX
                         </button>
                     </h2>
                     <div class="accordion-collapse collapse">
@@ -164,7 +170,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
-                            Hauts de France
+                            Hauts de FranceX
                         </button>
                     </h2>
                     <div class="accordion-collapse collapse">
@@ -181,7 +187,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
-                            Île-de-France
+                            Île-de-FranceX
                         </button>
                     </h2>
                     <div class="accordion-collapse collapse">
@@ -201,7 +207,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
-                            Normandie
+                            NormandieX
                         </button>
                     </h2>
                     <div class="accordion-collapse collapse">
@@ -218,7 +224,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
-                            Nouvelle Aquitaine
+                            Nouvelle AquitaineX
                         </button>
                     </h2>
                     <div class="accordion-collapse collapse">
@@ -243,7 +249,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
-                            Occitanie
+                            OccitanieX
                         </button>
                     </h2>
                     <div class="accordion-collapse collapse">
@@ -268,7 +274,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
-                            Pays de la loire
+                            Pays de la loireX
                         </button>
                     </h2>
                     <div class="accordion-collapse collapse">
@@ -285,7 +291,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
-                            Provence alpes côte d'azure
+                            Provence alpes côte d'azureX
                         </button>
                     </h2>
                     <div class="accordion-collapse collapse">
@@ -303,7 +309,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
-                            Départements/Régions outre-mer
+                            Départements/Régions outre-merX
                         </button>
                     </h2>
                     <div class="accordion-collapse collapse">
